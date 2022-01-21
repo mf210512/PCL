@@ -7,35 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E42FC50279811C500BA9274 /* libboost_date_time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3F279811BC00BA9274 /* libboost_date_time.a */; };
-		0E42FC51279811C500BA9274 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC45279811BC00BA9274 /* libboost_filesystem.a */; };
-		0E42FC52279811C500BA9274 /* libboost_iostreams.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4F279811BC00BA9274 /* libboost_iostreams.a */; };
-		0E42FC53279811C500BA9274 /* libboost_program_options.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC37279811BB00BA9274 /* libboost_program_options.a */; };
-		0E42FC54279811C500BA9274 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC49279811BC00BA9274 /* libboost_regex.a */; };
-		0E42FC55279811C500BA9274 /* libboost_signals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC46279811BC00BA9274 /* libboost_signals.a */; };
-		0E42FC56279811C500BA9274 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3D279811BC00BA9274 /* libboost_system.a */; };
-		0E42FC57279811C500BA9274 /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4E279811BC00BA9274 /* libboost_thread.a */; };
-		0E42FC58279811C500BA9274 /* libflann_cpp_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC33279811BB00BA9274 /* libflann_cpp_s.a */; };
-		0E42FC59279811C500BA9274 /* libpcl_common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC34279811BB00BA9274 /* libpcl_common.a */; };
-		0E42FC5A279811C500BA9274 /* libpcl_features.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4B279811BC00BA9274 /* libpcl_features.a */; };
-		0E42FC5B279811C500BA9274 /* libpcl_filters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4C279811BC00BA9274 /* libpcl_filters.a */; };
-		0E42FC5C279811C500BA9274 /* libpcl_io_ply.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3B279811BC00BA9274 /* libpcl_io_ply.a */; };
-		0E42FC5D279811C500BA9274 /* libpcl_io.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC42279811BC00BA9274 /* libpcl_io.a */; };
-		0E42FC5E279811C500BA9274 /* libpcl_kdtree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC41279811BC00BA9274 /* libpcl_kdtree.a */; };
-		0E42FC5F279811C500BA9274 /* libpcl_keypoints.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC39279811BB00BA9274 /* libpcl_keypoints.a */; };
-		0E42FC60279811C500BA9274 /* libpcl_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4D279811BC00BA9274 /* libpcl_ml.a */; };
-		0E42FC61279811C500BA9274 /* libpcl_octree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3E279811BC00BA9274 /* libpcl_octree.a */; };
-		0E42FC62279811C500BA9274 /* libpcl_recognition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3A279811BB00BA9274 /* libpcl_recognition.a */; };
-		0E42FC63279811C500BA9274 /* libpcl_registration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC35279811BB00BA9274 /* libpcl_registration.a */; };
-		0E42FC64279811C500BA9274 /* libpcl_sample_consensus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC38279811BB00BA9274 /* libpcl_sample_consensus.a */; };
-		0E42FC65279811C500BA9274 /* libpcl_search.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC40279811BC00BA9274 /* libpcl_search.a */; };
-		0E42FC66279811C500BA9274 /* libpcl_segmentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC48279811BC00BA9274 /* libpcl_segmentation.a */; };
-		0E42FC67279811C500BA9274 /* libpcl_stereo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC3C279811BC00BA9274 /* libpcl_stereo.a */; };
-		0E42FC68279811C600BA9274 /* libpcl_surface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC44279811BC00BA9274 /* libpcl_surface.a */; };
-		0E42FC69279811C600BA9274 /* libpcl_tracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC36279811BB00BA9274 /* libpcl_tracking.a */; };
-		0E42FC6A279811C600BA9274 /* libqhullcpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC47279811BC00BA9274 /* libqhullcpp.a */; };
-		0E42FC6B279811C600BA9274 /* libqhullstatic_r.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC4A279811BC00BA9274 /* libqhullstatic_r.a */; };
-		0E42FC6C279811C600BA9274 /* libqhullstatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42FC43279811BC00BA9274 /* libqhullstatic.a */; };
 		0E927F7C27969EC8003A366A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E927F7B27969EC8003A366A /* AppDelegate.swift */; };
 		0E927F7E27969EC8003A366A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E927F7D27969EC8003A366A /* art.scnassets */; };
 		0E927F8027969EC8003A366A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E927F7F27969EC8003A366A /* ViewController.swift */; };
@@ -43,39 +14,39 @@
 		0E927F8527969EC9003A366A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E927F8427969EC9003A366A /* Assets.xcassets */; };
 		0E927F8827969EC9003A366A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E927F8627969EC9003A366A /* LaunchScreen.storyboard */; };
 		0E927F8F2796A04C003A366A /* PointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E927F8E2796A04C003A366A /* PointCloud.swift */; };
-		0ED33D402796AB8800D6CA9E /* PCLWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33D3E2796AB8800D6CA9E /* PCLWrapper.cpp */; };
+		0ED33D402796AB8800D6CA9E /* PCLWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0ED33D3E2796AB8800D6CA9E /* PCLWrapper.cpp */; settings = {COMPILER_FLAGS = "-D_LIBCPP_ENABLE_CXX17_REMOVED_FEATURES"; }; };
+		D33F706E279A89E900668631 /* libboost_date_time.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7051279A89E800668631 /* libboost_date_time.a */; };
+		D33F706F279A89E900668631 /* libpcl_registration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7052279A89E800668631 /* libpcl_registration.a */; };
+		D33F7070279A89E900668631 /* libpcl_sample_consensus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7053279A89E800668631 /* libpcl_sample_consensus.a */; };
+		D33F7071279A89E900668631 /* libqhullstatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7054279A89E800668631 /* libqhullstatic.a */; };
+		D33F7072279A89E900668631 /* libpcl_io_ply.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7055279A89E800668631 /* libpcl_io_ply.a */; };
+		D33F7073279A89E900668631 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7056279A89E800668631 /* libboost_system.a */; };
+		D33F7074279A89E900668631 /* libpcl_common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7057279A89E800668631 /* libpcl_common.a */; };
+		D33F7075279A89E900668631 /* libqhullstatic_r.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7058279A89E800668631 /* libqhullstatic_r.a */; };
+		D33F7076279A89E900668631 /* libboost_signals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7059279A89E800668631 /* libboost_signals.a */; };
+		D33F7077279A89E900668631 /* libpcl_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705A279A89E800668631 /* libpcl_ml.a */; };
+		D33F7078279A89E900668631 /* libpcl_surface.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705B279A89E800668631 /* libpcl_surface.a */; };
+		D33F7079279A89E900668631 /* libpcl_features.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705C279A89E800668631 /* libpcl_features.a */; };
+		D33F707A279A89E900668631 /* libpcl_search.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705D279A89E800668631 /* libpcl_search.a */; };
+		D33F707B279A89E900668631 /* libqhullcpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705E279A89E800668631 /* libqhullcpp.a */; };
+		D33F707C279A89E900668631 /* libpcl_tracking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F705F279A89E800668631 /* libpcl_tracking.a */; };
+		D33F707D279A89E900668631 /* libpcl_segmentation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7060279A89E800668631 /* libpcl_segmentation.a */; };
+		D33F707E279A89E900668631 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7061279A89E800668631 /* libboost_filesystem.a */; };
+		D33F707F279A89E900668631 /* libflann_cpp_s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7062279A89E800668631 /* libflann_cpp_s.a */; };
+		D33F7080279A89E900668631 /* libboost_iostreams.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7063279A89E800668631 /* libboost_iostreams.a */; };
+		D33F7081279A89E900668631 /* libpcl_filters.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7064279A89E800668631 /* libpcl_filters.a */; };
+		D33F7082279A89E900668631 /* libpcl_io.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7065279A89E800668631 /* libpcl_io.a */; };
+		D33F7083279A89E900668631 /* libboost_program_options.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7066279A89E800668631 /* libboost_program_options.a */; };
+		D33F7084279A89E900668631 /* libpcl_octree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7067279A89E800668631 /* libpcl_octree.a */; };
+		D33F7085279A89E900668631 /* libpcl_stereo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7068279A89E800668631 /* libpcl_stereo.a */; };
+		D33F7086279A89E900668631 /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F7069279A89E800668631 /* libboost_thread.a */; };
+		D33F7087279A89E900668631 /* libpcl_keypoints.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F706A279A89E800668631 /* libpcl_keypoints.a */; };
+		D33F7088279A89E900668631 /* libboost_regex.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F706B279A89E800668631 /* libboost_regex.a */; };
+		D33F7089279A89E900668631 /* libpcl_recognition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F706C279A89E900668631 /* libpcl_recognition.a */; };
+		D33F708A279A89E900668631 /* libpcl_kdtree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D33F706D279A89E900668631 /* libpcl_kdtree.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0E42FC33279811BB00BA9274 /* libflann_cpp_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libflann_cpp_s.a; path = ../PCLSNOW/PCL_Build_Artifacts/libflann_cpp_s.a; sourceTree = "<group>"; };
-		0E42FC34279811BB00BA9274 /* libpcl_common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_common.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_common.a; sourceTree = "<group>"; };
-		0E42FC35279811BB00BA9274 /* libpcl_registration.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_registration.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_registration.a; sourceTree = "<group>"; };
-		0E42FC36279811BB00BA9274 /* libpcl_tracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_tracking.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_tracking.a; sourceTree = "<group>"; };
-		0E42FC37279811BB00BA9274 /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_program_options.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_program_options.a; sourceTree = "<group>"; };
-		0E42FC38279811BB00BA9274 /* libpcl_sample_consensus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_sample_consensus.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_sample_consensus.a; sourceTree = "<group>"; };
-		0E42FC39279811BB00BA9274 /* libpcl_keypoints.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_keypoints.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_keypoints.a; sourceTree = "<group>"; };
-		0E42FC3A279811BB00BA9274 /* libpcl_recognition.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_recognition.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_recognition.a; sourceTree = "<group>"; };
-		0E42FC3B279811BC00BA9274 /* libpcl_io_ply.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_io_ply.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_io_ply.a; sourceTree = "<group>"; };
-		0E42FC3C279811BC00BA9274 /* libpcl_stereo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_stereo.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_stereo.a; sourceTree = "<group>"; };
-		0E42FC3D279811BC00BA9274 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_system.a; sourceTree = "<group>"; };
-		0E42FC3E279811BC00BA9274 /* libpcl_octree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_octree.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_octree.a; sourceTree = "<group>"; };
-		0E42FC3F279811BC00BA9274 /* libboost_date_time.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_date_time.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_date_time.a; sourceTree = "<group>"; };
-		0E42FC40279811BC00BA9274 /* libpcl_search.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_search.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_search.a; sourceTree = "<group>"; };
-		0E42FC41279811BC00BA9274 /* libpcl_kdtree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_kdtree.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_kdtree.a; sourceTree = "<group>"; };
-		0E42FC42279811BC00BA9274 /* libpcl_io.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_io.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_io.a; sourceTree = "<group>"; };
-		0E42FC43279811BC00BA9274 /* libqhullstatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullstatic.a; path = ../PCLSNOW/PCL_Build_Artifacts/libqhullstatic.a; sourceTree = "<group>"; };
-		0E42FC44279811BC00BA9274 /* libpcl_surface.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_surface.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_surface.a; sourceTree = "<group>"; };
-		0E42FC45279811BC00BA9274 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_filesystem.a; sourceTree = "<group>"; };
-		0E42FC46279811BC00BA9274 /* libboost_signals.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_signals.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_signals.a; sourceTree = "<group>"; };
-		0E42FC47279811BC00BA9274 /* libqhullcpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullcpp.a; path = ../PCLSNOW/PCL_Build_Artifacts/libqhullcpp.a; sourceTree = "<group>"; };
-		0E42FC48279811BC00BA9274 /* libpcl_segmentation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_segmentation.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_segmentation.a; sourceTree = "<group>"; };
-		0E42FC49279811BC00BA9274 /* libboost_regex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_regex.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_regex.a; sourceTree = "<group>"; };
-		0E42FC4A279811BC00BA9274 /* libqhullstatic_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullstatic_r.a; path = ../PCLSNOW/PCL_Build_Artifacts/libqhullstatic_r.a; sourceTree = "<group>"; };
-		0E42FC4B279811BC00BA9274 /* libpcl_features.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_features.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_features.a; sourceTree = "<group>"; };
-		0E42FC4C279811BC00BA9274 /* libpcl_filters.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_filters.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_filters.a; sourceTree = "<group>"; };
-		0E42FC4D279811BC00BA9274 /* libpcl_ml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_ml.a; path = ../PCLSNOW/PCL_Build_Artifacts/libpcl_ml.a; sourceTree = "<group>"; };
-		0E42FC4E279811BC00BA9274 /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_thread.a; sourceTree = "<group>"; };
-		0E42FC4F279811BC00BA9274 /* libboost_iostreams.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_iostreams.a; path = ../PCLSNOW/PCL_Build_Artifacts/libboost_iostreams.a; sourceTree = "<group>"; };
 		0E927F7827969EC8003A366A /* PCLS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCLS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E927F7B27969EC8003A366A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E927F7D27969EC8003A366A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -87,6 +58,35 @@
 		0ED33D3D2796AB8800D6CA9E /* PCLS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PCLS-Bridging-Header.h"; sourceTree = "<group>"; };
 		0ED33D3E2796AB8800D6CA9E /* PCLWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PCLWrapper.cpp; sourceTree = "<group>"; };
 		0ED33D3F2796AB8800D6CA9E /* PCLWrapper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PCLWrapper.hpp; sourceTree = "<group>"; };
+		D33F7051279A89E800668631 /* libboost_date_time.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_date_time.a; path = PCL_Build_Artifacts/libboost_date_time.a; sourceTree = "<group>"; };
+		D33F7052279A89E800668631 /* libpcl_registration.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_registration.a; path = PCL_Build_Artifacts/libpcl_registration.a; sourceTree = "<group>"; };
+		D33F7053279A89E800668631 /* libpcl_sample_consensus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_sample_consensus.a; path = PCL_Build_Artifacts/libpcl_sample_consensus.a; sourceTree = "<group>"; };
+		D33F7054279A89E800668631 /* libqhullstatic.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullstatic.a; path = PCL_Build_Artifacts/libqhullstatic.a; sourceTree = "<group>"; };
+		D33F7055279A89E800668631 /* libpcl_io_ply.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_io_ply.a; path = PCL_Build_Artifacts/libpcl_io_ply.a; sourceTree = "<group>"; };
+		D33F7056279A89E800668631 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = PCL_Build_Artifacts/libboost_system.a; sourceTree = "<group>"; };
+		D33F7057279A89E800668631 /* libpcl_common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_common.a; path = PCL_Build_Artifacts/libpcl_common.a; sourceTree = "<group>"; };
+		D33F7058279A89E800668631 /* libqhullstatic_r.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullstatic_r.a; path = PCL_Build_Artifacts/libqhullstatic_r.a; sourceTree = "<group>"; };
+		D33F7059279A89E800668631 /* libboost_signals.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_signals.a; path = PCL_Build_Artifacts/libboost_signals.a; sourceTree = "<group>"; };
+		D33F705A279A89E800668631 /* libpcl_ml.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_ml.a; path = PCL_Build_Artifacts/libpcl_ml.a; sourceTree = "<group>"; };
+		D33F705B279A89E800668631 /* libpcl_surface.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_surface.a; path = PCL_Build_Artifacts/libpcl_surface.a; sourceTree = "<group>"; };
+		D33F705C279A89E800668631 /* libpcl_features.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_features.a; path = PCL_Build_Artifacts/libpcl_features.a; sourceTree = "<group>"; };
+		D33F705D279A89E800668631 /* libpcl_search.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_search.a; path = PCL_Build_Artifacts/libpcl_search.a; sourceTree = "<group>"; };
+		D33F705E279A89E800668631 /* libqhullcpp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqhullcpp.a; path = PCL_Build_Artifacts/libqhullcpp.a; sourceTree = "<group>"; };
+		D33F705F279A89E800668631 /* libpcl_tracking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_tracking.a; path = PCL_Build_Artifacts/libpcl_tracking.a; sourceTree = "<group>"; };
+		D33F7060279A89E800668631 /* libpcl_segmentation.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_segmentation.a; path = PCL_Build_Artifacts/libpcl_segmentation.a; sourceTree = "<group>"; };
+		D33F7061279A89E800668631 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = PCL_Build_Artifacts/libboost_filesystem.a; sourceTree = "<group>"; };
+		D33F7062279A89E800668631 /* libflann_cpp_s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libflann_cpp_s.a; path = PCL_Build_Artifacts/libflann_cpp_s.a; sourceTree = "<group>"; };
+		D33F7063279A89E800668631 /* libboost_iostreams.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_iostreams.a; path = PCL_Build_Artifacts/libboost_iostreams.a; sourceTree = "<group>"; };
+		D33F7064279A89E800668631 /* libpcl_filters.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_filters.a; path = PCL_Build_Artifacts/libpcl_filters.a; sourceTree = "<group>"; };
+		D33F7065279A89E800668631 /* libpcl_io.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_io.a; path = PCL_Build_Artifacts/libpcl_io.a; sourceTree = "<group>"; };
+		D33F7066279A89E800668631 /* libboost_program_options.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_program_options.a; path = PCL_Build_Artifacts/libboost_program_options.a; sourceTree = "<group>"; };
+		D33F7067279A89E800668631 /* libpcl_octree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_octree.a; path = PCL_Build_Artifacts/libpcl_octree.a; sourceTree = "<group>"; };
+		D33F7068279A89E800668631 /* libpcl_stereo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_stereo.a; path = PCL_Build_Artifacts/libpcl_stereo.a; sourceTree = "<group>"; };
+		D33F7069279A89E800668631 /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = PCL_Build_Artifacts/libboost_thread.a; sourceTree = "<group>"; };
+		D33F706A279A89E800668631 /* libpcl_keypoints.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_keypoints.a; path = PCL_Build_Artifacts/libpcl_keypoints.a; sourceTree = "<group>"; };
+		D33F706B279A89E800668631 /* libboost_regex.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_regex.a; path = PCL_Build_Artifacts/libboost_regex.a; sourceTree = "<group>"; };
+		D33F706C279A89E900668631 /* libpcl_recognition.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_recognition.a; path = PCL_Build_Artifacts/libpcl_recognition.a; sourceTree = "<group>"; };
+		D33F706D279A89E900668631 /* libpcl_kdtree.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpcl_kdtree.a; path = PCL_Build_Artifacts/libpcl_kdtree.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,35 +94,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E42FC63279811C500BA9274 /* libpcl_registration.a in Frameworks */,
-				0E42FC66279811C500BA9274 /* libpcl_segmentation.a in Frameworks */,
-				0E42FC69279811C600BA9274 /* libpcl_tracking.a in Frameworks */,
-				0E42FC5A279811C500BA9274 /* libpcl_features.a in Frameworks */,
-				0E42FC5D279811C500BA9274 /* libpcl_io.a in Frameworks */,
-				0E42FC6C279811C600BA9274 /* libqhullstatic.a in Frameworks */,
-				0E42FC51279811C500BA9274 /* libboost_filesystem.a in Frameworks */,
-				0E42FC56279811C500BA9274 /* libboost_system.a in Frameworks */,
-				0E42FC53279811C500BA9274 /* libboost_program_options.a in Frameworks */,
-				0E42FC54279811C500BA9274 /* libboost_regex.a in Frameworks */,
-				0E42FC5B279811C500BA9274 /* libpcl_filters.a in Frameworks */,
-				0E42FC64279811C500BA9274 /* libpcl_sample_consensus.a in Frameworks */,
-				0E42FC55279811C500BA9274 /* libboost_signals.a in Frameworks */,
-				0E42FC57279811C500BA9274 /* libboost_thread.a in Frameworks */,
-				0E42FC58279811C500BA9274 /* libflann_cpp_s.a in Frameworks */,
-				0E42FC68279811C600BA9274 /* libpcl_surface.a in Frameworks */,
-				0E42FC60279811C500BA9274 /* libpcl_ml.a in Frameworks */,
-				0E42FC52279811C500BA9274 /* libboost_iostreams.a in Frameworks */,
-				0E42FC5C279811C500BA9274 /* libpcl_io_ply.a in Frameworks */,
-				0E42FC6A279811C600BA9274 /* libqhullcpp.a in Frameworks */,
-				0E42FC5F279811C500BA9274 /* libpcl_keypoints.a in Frameworks */,
-				0E42FC59279811C500BA9274 /* libpcl_common.a in Frameworks */,
-				0E42FC65279811C500BA9274 /* libpcl_search.a in Frameworks */,
-				0E42FC62279811C500BA9274 /* libpcl_recognition.a in Frameworks */,
-				0E42FC5E279811C500BA9274 /* libpcl_kdtree.a in Frameworks */,
-				0E42FC67279811C500BA9274 /* libpcl_stereo.a in Frameworks */,
-				0E42FC50279811C500BA9274 /* libboost_date_time.a in Frameworks */,
-				0E42FC61279811C500BA9274 /* libpcl_octree.a in Frameworks */,
-				0E42FC6B279811C600BA9274 /* libqhullstatic_r.a in Frameworks */,
+				D33F706E279A89E900668631 /* libboost_date_time.a in Frameworks */,
+				D33F706F279A89E900668631 /* libpcl_registration.a in Frameworks */,
+				D33F7070279A89E900668631 /* libpcl_sample_consensus.a in Frameworks */,
+				D33F7071279A89E900668631 /* libqhullstatic.a in Frameworks */,
+				D33F7072279A89E900668631 /* libpcl_io_ply.a in Frameworks */,
+				D33F7073279A89E900668631 /* libboost_system.a in Frameworks */,
+				D33F7074279A89E900668631 /* libpcl_common.a in Frameworks */,
+				D33F7075279A89E900668631 /* libqhullstatic_r.a in Frameworks */,
+				D33F7076279A89E900668631 /* libboost_signals.a in Frameworks */,
+				D33F7077279A89E900668631 /* libpcl_ml.a in Frameworks */,
+				D33F7078279A89E900668631 /* libpcl_surface.a in Frameworks */,
+				D33F7079279A89E900668631 /* libpcl_features.a in Frameworks */,
+				D33F707A279A89E900668631 /* libpcl_search.a in Frameworks */,
+				D33F707B279A89E900668631 /* libqhullcpp.a in Frameworks */,
+				D33F707C279A89E900668631 /* libpcl_tracking.a in Frameworks */,
+				D33F707D279A89E900668631 /* libpcl_segmentation.a in Frameworks */,
+				D33F707E279A89E900668631 /* libboost_filesystem.a in Frameworks */,
+				D33F707F279A89E900668631 /* libflann_cpp_s.a in Frameworks */,
+				D33F7080279A89E900668631 /* libboost_iostreams.a in Frameworks */,
+				D33F7081279A89E900668631 /* libpcl_filters.a in Frameworks */,
+				D33F7082279A89E900668631 /* libpcl_io.a in Frameworks */,
+				D33F7083279A89E900668631 /* libboost_program_options.a in Frameworks */,
+				D33F7084279A89E900668631 /* libpcl_octree.a in Frameworks */,
+				D33F7085279A89E900668631 /* libpcl_stereo.a in Frameworks */,
+				D33F7086279A89E900668631 /* libboost_thread.a in Frameworks */,
+				D33F7087279A89E900668631 /* libpcl_keypoints.a in Frameworks */,
+				D33F7088279A89E900668631 /* libboost_regex.a in Frameworks */,
+				D33F7089279A89E900668631 /* libpcl_recognition.a in Frameworks */,
+				D33F708A279A89E900668631 /* libpcl_kdtree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,35 +132,35 @@
 		0E42FC32279811BB00BA9274 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E42FC3F279811BC00BA9274 /* libboost_date_time.a */,
-				0E42FC45279811BC00BA9274 /* libboost_filesystem.a */,
-				0E42FC4F279811BC00BA9274 /* libboost_iostreams.a */,
-				0E42FC37279811BB00BA9274 /* libboost_program_options.a */,
-				0E42FC49279811BC00BA9274 /* libboost_regex.a */,
-				0E42FC46279811BC00BA9274 /* libboost_signals.a */,
-				0E42FC3D279811BC00BA9274 /* libboost_system.a */,
-				0E42FC4E279811BC00BA9274 /* libboost_thread.a */,
-				0E42FC33279811BB00BA9274 /* libflann_cpp_s.a */,
-				0E42FC34279811BB00BA9274 /* libpcl_common.a */,
-				0E42FC4B279811BC00BA9274 /* libpcl_features.a */,
-				0E42FC4C279811BC00BA9274 /* libpcl_filters.a */,
-				0E42FC3B279811BC00BA9274 /* libpcl_io_ply.a */,
-				0E42FC42279811BC00BA9274 /* libpcl_io.a */,
-				0E42FC41279811BC00BA9274 /* libpcl_kdtree.a */,
-				0E42FC39279811BB00BA9274 /* libpcl_keypoints.a */,
-				0E42FC4D279811BC00BA9274 /* libpcl_ml.a */,
-				0E42FC3E279811BC00BA9274 /* libpcl_octree.a */,
-				0E42FC3A279811BB00BA9274 /* libpcl_recognition.a */,
-				0E42FC35279811BB00BA9274 /* libpcl_registration.a */,
-				0E42FC38279811BB00BA9274 /* libpcl_sample_consensus.a */,
-				0E42FC40279811BC00BA9274 /* libpcl_search.a */,
-				0E42FC48279811BC00BA9274 /* libpcl_segmentation.a */,
-				0E42FC3C279811BC00BA9274 /* libpcl_stereo.a */,
-				0E42FC44279811BC00BA9274 /* libpcl_surface.a */,
-				0E42FC36279811BB00BA9274 /* libpcl_tracking.a */,
-				0E42FC47279811BC00BA9274 /* libqhullcpp.a */,
-				0E42FC4A279811BC00BA9274 /* libqhullstatic_r.a */,
-				0E42FC43279811BC00BA9274 /* libqhullstatic.a */,
+				D33F7051279A89E800668631 /* libboost_date_time.a */,
+				D33F7061279A89E800668631 /* libboost_filesystem.a */,
+				D33F7063279A89E800668631 /* libboost_iostreams.a */,
+				D33F7066279A89E800668631 /* libboost_program_options.a */,
+				D33F706B279A89E800668631 /* libboost_regex.a */,
+				D33F7059279A89E800668631 /* libboost_signals.a */,
+				D33F7056279A89E800668631 /* libboost_system.a */,
+				D33F7069279A89E800668631 /* libboost_thread.a */,
+				D33F7062279A89E800668631 /* libflann_cpp_s.a */,
+				D33F7057279A89E800668631 /* libpcl_common.a */,
+				D33F705C279A89E800668631 /* libpcl_features.a */,
+				D33F7064279A89E800668631 /* libpcl_filters.a */,
+				D33F7055279A89E800668631 /* libpcl_io_ply.a */,
+				D33F7065279A89E800668631 /* libpcl_io.a */,
+				D33F706D279A89E900668631 /* libpcl_kdtree.a */,
+				D33F706A279A89E800668631 /* libpcl_keypoints.a */,
+				D33F705A279A89E800668631 /* libpcl_ml.a */,
+				D33F7067279A89E800668631 /* libpcl_octree.a */,
+				D33F706C279A89E900668631 /* libpcl_recognition.a */,
+				D33F7052279A89E800668631 /* libpcl_registration.a */,
+				D33F7053279A89E800668631 /* libpcl_sample_consensus.a */,
+				D33F705D279A89E800668631 /* libpcl_search.a */,
+				D33F7060279A89E800668631 /* libpcl_segmentation.a */,
+				D33F7068279A89E800668631 /* libpcl_stereo.a */,
+				D33F705B279A89E800668631 /* libpcl_surface.a */,
+				D33F705F279A89E800668631 /* libpcl_tracking.a */,
+				D33F705E279A89E800668631 /* libqhullcpp.a */,
+				D33F7058279A89E800668631 /* libqhullstatic_r.a */,
+				D33F7054279A89E800668631 /* libqhullstatic.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -344,6 +344,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -405,6 +406,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -428,21 +430,22 @@
 		0E927F8C27969EC9003A366A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 792S2Q673W;
+				DEVELOPMENT_TEAM = UVDFLBUGP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/Libraries/PCL/include/pcl-1.8\"",
-					"\"$(PROJECT_DIR)/Libraries/eigen\"",
-					"\"$(PROJECT_DIR)/Libraries/boost-ios-device/include\"",
-					"\"$(PROJECT_DIR)/Libraries/flann-ios-device/include\"",
+					"$(PROJECT_DIR)/Libraries/PCL/include/pcl-1.8",
+					"$(PROJECT_DIR)/Libraries/boost-ios-device/include",
+					"$(PROJECT_DIR)/Libraries/eigen",
+					"$(PROJECT_DIR)/Libraries/flann-ios-device/include",
 				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(inherited)";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -455,14 +458,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries/PCL/lib",
-					"\"$(PROJECT_DIR)/Libraries/eigen\"",
-					"$(PROJECT_DIR)/Libraries/boost-ios-device/lib",
-					"$(PROJECT_DIR)/Libraries/flann-ios-device/lib",
-					"$(PROJECT_DIR)NOW/PCL_Build_Artifacts",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/PCL_Build_Artifacts";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = organizationaugm22.PCLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -477,20 +473,17 @@
 		0E927F8D27969EC9003A366A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 792S2Q673W;
+				DEVELOPMENT_TEAM = UVDFLBUGP5;
 				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/Libraries/PCL/include/pcl-1.8\"",
-					"\"$(PROJECT_DIR)/Libraries/eigen\"",
-					"\"$(PROJECT_DIR)/Libraries/boost-ios-device/include\"",
-					"\"$(PROJECT_DIR)/Libraries/flann-ios-device/include\"",
+					"$(PROJECT_DIR)/LIbraries/PCL/include/pcl-1.8",
 				);
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,14 +497,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Libraries/PCL/lib",
-					"\"$(PROJECT_DIR)/Libraries/eigen\"",
-					"$(PROJECT_DIR)/Libraries/boost-ios-device/lib",
-					"$(PROJECT_DIR)/Libraries/flann-ios-device/lib",
-					"$(PROJECT_DIR)NOW/PCL_Build_Artifacts",
-				);
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/PCL_Build_Artifacts";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = organizationaugm22.PCLS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
