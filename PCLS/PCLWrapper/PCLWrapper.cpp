@@ -204,5 +204,8 @@ PCLMesh performSurfaceReconstruction(PCLPointCloud inputPCLPointCloud) {
     pclMesh.numFaces = meshNumFaces;
     pclMesh.points = meshPointsPtr;
     pclMesh.polygons = meshPolygonsPtr;
+    
+//    std::cout << "aaunk" <<std::endl;
+    
     return pclMesh;
 }

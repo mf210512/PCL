@@ -11,14 +11,20 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
+    // MARK: - 変数の定義
     @IBOutlet var sceneView: ARSCNView!
     
     // Struct to hold currently captured Point Cloud data
     private var pointCloud = PointCloud()
     private let addPointRatio = 3 // Show 1 / [addPointRatio] of the points
     private let scanningInterval = 0.5 // Capture points every [scanningInterval] seconds when user is touching screen
+    private var surfaceParentNode = SCNNode()
+    private var pointsParentNode = SCNNode()
+    private var surfaceGeometry: SCNGeometry?
     private lazy var pointMaterial: SCNMaterial = createPointMaterial()
     
+    
+    // MARK: - viewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -79,7 +85,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    // MARK: - capturePoints 点群を取得
+    // MARK: - capturePoints 点群を取得するメソッド
     private func capturePoints() {
             
             // Store Points
@@ -110,21 +116,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 pointCloud.frameViewpoints.append(position)
             }
         //mesh 表示
-//        print("aaomg:\(performSurfaceReconstruction())")
+        reconstructButtonTapped()
         }
     /**
          Helper function to add points to the view at the given position.
          */
+    // MARK: - addPointToView
     private func addPointToView(position: vector_float3) {
         let sphere = SCNSphere(radius: 0.00066)
         sphere.segmentCount = 8
         sphere.firstMaterial = pointMaterial
-
         let sphereNode = SCNNode(geometry: sphere)
         sphereNode.orientation = (sceneView.pointOfView?.orientation)!
         sphereNode.pivot = SCNMatrix4MakeRotation(-Float.pi / 2, 0, 1, 0)
         sphereNode.position = SCNVector3(position)
-//        pointsParentNode.addChildNode(sphereNode)
+        pointsParentNode.addChildNode(sphereNode)
         sceneView.scene.rootNode.addChildNode(sphereNode)
     }
     
@@ -139,44 +145,41 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         capturePoints()
     }
     
-        //ボタン押されたら形表示
-//    func reconstructButtonTapped() {
-//
-//            // Prepare Point Cloud data structures in C struct format
-//
-//            let pclPoints = pointCloud.points.map { PCLPoint3D(x: Double($0.x), y: Double($0.y), z: Double($0.z)) }
-//            let pclViewpoints = pointCloud.frameViewpoints.map { PCLPoint3D(x: Double($0.x), y: Double($0.y), z: Double($0.z)) }
-//
-//            let pclPointCloud = PCLPointCloud(
-//                numPoints: Int32(pointCloud.points.count),
-//                points: pclPoints,
-//                numFrames: Int32(pointCloud.frameViewpoints.count),
-//                pointFrameLengths: pointCloud.framePointsSizes,
-//                viewpoints: pclViewpoints)
-//
-//            // Call C++ Surface Reconstruction function using C Wrapper
-//            let pclMesh = performSurfaceReconstruction(pclPointCloud)
-//            defer {
-//                // The mesh points and polygons pointers were allocated in C++ so need to be freed here
-//                free(pclMesh.points)
-//                free(pclMesh.polygons)
-//            }
-//
-//            // Remove current surfaces before displaying new surface
-//            surfaceParentNode.enumerateChildNodes { (node, stop) in
-//                node.removeFromParentNode()
-//                node.geometry = nil
-//            }
-//
-//            // Display surface
-//            displaySurfaceSwitch.isOn = true
-//            isSurfaceDisplayOn = true
-//            let surfaceNode = constructSurfaceNode(pclMesh: pclMesh)
-//            surfaceParentNode.addChildNode(surfaceNode)
-//
-//            isCapturingPoints = false
-//            showAlert(title: "Surface Reconstructed", message: "\(pclMesh.numFaces) faces")
-//        }
+        //形表示    // MARK: - reconstruct
+    func reconstructButtonTapped() {
+
+            // Prepare Point Cloud data structures in C struct format
+
+            let pclPoints = pointCloud.points.map { PCLPoint3D(x: Double($0.x), y: Double($0.y), z: Double($0.z)) }
+            let pclViewpoints = pointCloud.frameViewpoints.map { PCLPoint3D(x: Double($0.x), y: Double($0.y), z: Double($0.z)) }
+
+            let pclPointCloud = PCLPointCloud(
+                numPoints: Int32(pointCloud.points.count),
+                points: pclPoints,
+                numFrames: Int32(pointCloud.frameViewpoints.count),
+                pointFrameLengths: pointCloud.framePointsSizes,
+                viewpoints: pclViewpoints)
+
+            // Call C++ Surface Reconstruction function using C Wrapper
+            let pclMesh = performSurfaceReconstruction(pclPointCloud)
+            defer {
+                // The mesh points and polygons pointers were allocated in C++ so need to be freed here
+                free(pclMesh.points)
+                free(pclMesh.polygons)
+            }
+
+            // Remove current surfaces before displaying new surface
+            surfaceParentNode.enumerateChildNodes { (node, stop) in
+                node.removeFromParentNode()
+                node.geometry = nil
+            }
+            // Display surface
+            let surfaceNode = constructSurfaceNode(pclMesh: pclMesh)
+            surfaceParentNode.addChildNode(surfaceNode)
+        
+        sceneView.scene.rootNode.addChildNode(surfaceNode)
+
+        }
     /**
          Creates a the SCNMaterial to be used for points in the displayed Point Cloud.
          */
@@ -192,5 +195,36 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         pointMaterial.diffuse.contents = pointMaterialImage
         return pointMaterial
     }
+    
+    /**
+         Constructs an SCNNode representing the given PCL surface mesh output.
+         */
+    private func constructSurfaceNode(pclMesh: PCLMesh) -> SCNNode {
+            
+        // Construct vertices array
+        var vertices = [SCNVector3]()
+        for i in 0..<pclMesh.numPoints {
+            vertices.append(SCNVector3(x: Float(pclMesh.points[i].x),
+                                        y: Float(pclMesh.points[i].y),
+                                        z: Float(pclMesh.points[i].z)))
+        }
+        let vertexSource = SCNGeometrySource(vertices: vertices)
+        
+        // Construct elements array
+        var elements = [SCNGeometryElement]()
+        for i in 0..<pclMesh.numFaces {
+            let allPrimitives: [Int32] = [pclMesh.polygons[i].v1, pclMesh.polygons[i].v2, pclMesh.polygons[i].v3]
+            elements.append(SCNGeometryElement(indices: allPrimitives, primitiveType: .triangles))
+        }
+            
+        // Set surfaceGeometry to object from vertex and element data
+        surfaceGeometry = SCNGeometry(sources: [vertexSource], elements: elements)
+        surfaceGeometry?.firstMaterial?.isDoubleSided = true;
+        surfaceGeometry?.firstMaterial?.diffuse.contents =
+            UIColor(displayP3Red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
+        surfaceGeometry?.firstMaterial?.lightingModel = .blinn
+        return SCNNode(geometry: surfaceGeometry)
+    }
+        
 }
 
