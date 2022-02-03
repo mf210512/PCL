@@ -159,7 +159,7 @@ PCLMesh performSurfaceReconstruction(PCLPointCloud inputPCLPointCloud) {
 
     cout << "Begin poisson reconstruction" << endl;
     Poisson<PointNormal> poisson;
-    poisson.setDepth(5); // Default is 6
+    poisson.setDepth(4.7); // Default is 6
     poisson.setInputCloud(filteredPointCloudPtr);
     poisson.setPointWeight(4);
     poisson.setSamplesPerNode(1.5);

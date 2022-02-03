@@ -9,7 +9,7 @@ import UIKit
 import SceneKit
 import ARKit
 
-class ViewController: UIViewController, ARSCNViewDelegate {
+class ViewController: UIViewController, ARSCNViewDelegate, UIGestureRecognizerDelegate {
 
     // MARK: - 変数の定義
     @IBOutlet var sceneView: ARSCNView!
@@ -23,6 +23,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     private var surfaceGeometry: SCNGeometry?
     private lazy var pointMaterial: SCNMaterial = createPointMaterial()
     
+    @objc func handleTap(rec: UIGestureRecognizer) {
+        print("tapped")
+        reconstructButtonTapped()
+    }
     
     // MARK: - viewDidLoad()
     override func viewDidLoad() {
@@ -34,6 +38,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        
+        sceneView.scene.rootNode.addChildNode(surfaceParentNode)
+        sceneView.scene.rootNode.addChildNode(pointsParentNode)
+        
+        
+        var architectView = UIView()
+        architectView = UIView(frame: self.view.bounds)
+        self.view.addSubview(architectView)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(rec:)))
+        tap.delegate = self
+        architectView.addGestureRecognizer(tap)
+        
+        print("loaded")
         // Create a new scene
 //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
@@ -116,7 +133,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 pointCloud.frameViewpoints.append(position)
             }
         //mesh 表示
-        reconstructButtonTapped()
+//        reconstructButtonTapped()
         }
     /**
          Helper function to add points to the view at the given position.
@@ -131,7 +148,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sphereNode.pivot = SCNMatrix4MakeRotation(-Float.pi / 2, 0, 1, 0)
         sphereNode.position = SCNVector3(position)
         pointsParentNode.addChildNode(sphereNode)
-        sceneView.scene.rootNode.addChildNode(sphereNode)
+        //sceneView.scene.rootNode.addChildNode(sphereNode)
     }
     
     private var timer = Timer()
@@ -177,7 +194,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let surfaceNode = constructSurfaceNode(pclMesh: pclMesh)
             surfaceParentNode.addChildNode(surfaceNode)
         
-        sceneView.scene.rootNode.addChildNode(surfaceNode)
+//        sceneView.scene.rootNode.addChildNode(surfaceNode)
 
         }
     /**
